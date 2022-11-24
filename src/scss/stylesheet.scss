@@ -1,0 +1,83 @@
+/*SASS variables*/
+
+$primary-color: #F7F8FC;
+$sidebar-color: #363740;
+$chart-colors: darkgray;
+$chart-colors: #131313;
+$Ticket-colors: #262626;
+
+
+body{
+    background: $primary-color;
+}
+
+#side_nav{
+    display: none;
+    background: $sidebar-color;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+navbar{
+    margin-top: 4px;
+    background: $sidebar-color;
+    display: block;
+    flex-direction: row;
+    height: 40px;
+}
+
+.content{
+    background: $primary-color;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.logo{
+    float: left;
+    margin-top: 18px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+}
+
+.profilepic{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;  
+}
+
+.chart{
+    max-width: 100%;
+}
+
+.textchart{
+    color: $chart-colors;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.numberchart{
+    font-weight: bold;
+    color: $chart-colors;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.textticket, .numberticket{
+    color: $Ticket-colors;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 766px){
+    #side_nav{
+        display: block;
+    }
+
+    navbar{
+        display: none;
+    }
+}
